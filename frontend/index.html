@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>CRUD Étudiants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./config.js"></script> <!-- injecté via ConfigMap -->
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD Étudiants</h1>
+
+    <form id="create-form">
+      <input id="fn" placeholder="Prénom" required />
+      <input id="ln" placeholder="Nom" required />
+      <input id="em" placeholder="Email" type="email" required />
+      <button type="submit">Créer</button>
+    </form>
+
+    <table id="tbl">
+      <thead>
+        <tr><th>ID</th><th>Prénom</th><th>Nom</th><th>Email</th><th>Actions</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

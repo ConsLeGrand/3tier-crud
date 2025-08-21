@@ -1,0 +1,11 @@
+-- Schéma + table
+CREATE DATABASE IF NOT EXISTS etudiants CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE etudiants;
+
+CREATE TABLE IF NOT EXISTS students (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(100) NOT NULL,
+  last_name  VARCHAR(100) NOT NULL,
+  email      VARCHAR(190) NOT NULL UNIQUE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
